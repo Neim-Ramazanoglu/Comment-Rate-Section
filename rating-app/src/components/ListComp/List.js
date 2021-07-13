@@ -16,8 +16,8 @@ function List(props) {
         {props.comments.map((comment, index) => {
           return (
             <div key={comment.id}>
-              <li >{comment.text}</li>
-              <li className="List">
+              <ul >{comment.text}</ul>
+              <ul className="List">
                 <ReactStars
                   count={5}
                   edit={false}
@@ -25,7 +25,7 @@ function List(props) {
                   activeColor="#ffd700"
                   value={comment.vote}
                 />
-              </li>
+              </ul>
               <br />
             </div>
           );
